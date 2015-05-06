@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backg__"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.stx.bmi.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/llt_tall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_weight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llt_tall"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/et_tall"
+        android:ems="10"
+        android:hint="@string/inputweight"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/et_tall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10"
+        android:hint="@string/intputall"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_centerVertical="true"
+        android:text="@string/tall"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="34dp"
+        android:text="@string/weight"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_weight"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="22dp"
+        android:onClick="show"
+        android:text="@string/contact" />
+
+</RelativeLayout>
